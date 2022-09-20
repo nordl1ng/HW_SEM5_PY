@@ -27,7 +27,7 @@ def check(listt):
     or(listt[0][2] == listt[1][1] == listt[2][0] !="_"))
     return(a)
 
-def XO (move,i,j,list):
+def xo (move,i,j,list):
     if move ==-1:
         list[i][j]= "X"
     else:
@@ -46,7 +46,7 @@ while (check(listt) == 0 and count <9):
     print(f"игрок {player_number(move)} введите {xo(move)}")
     i = int(input("Ввведите i - (строка поля): "))
     j = int(input("Ввведите j - (стобец поля): "))
-    XO (move,i,j,listt)
+    xo (move,i,j,listt)
     move = move*-1
     print("________")
     print_list(listt)
