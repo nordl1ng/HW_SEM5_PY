@@ -1,7 +1,5 @@
 # Создайте программу для игры в ""Крестики-нолики"".
 
-listt = [["_","_","_"],['_','_','_'],['_', '_', '_']]
-
 def print_list(mas):
     for i in range (len(mas)):
         for k in range (len(mas)):
@@ -34,6 +32,7 @@ def XO_enter (move,i,j,list):
         list[i][j]= "O"
     return list[i][j]
 
+listt = [["_","_","_"],['_','_','_'],['_', '_', '_']]
 print_list(listt)
 import random
 move = random.choice([-1,1])

@@ -32,3 +32,16 @@ def enter_control(a):
         return x
 
 i = print(f"Введите i:") + {enter_control(2)}
+
+    # number = ''
+    # listt=[]
+    # listt.append([txt.split("|")])
+    # print(listt)
+    # res = ''
+    # for i in range(len(txt)):
+    #     if not txt[i].isalpha():
+    #         number += txt[i]
+    #     else:
+    #         res = res + txt[i] * int(number)
+    #         number = ''
+    # return res
