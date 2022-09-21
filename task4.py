@@ -16,22 +16,12 @@ def code(data):
 def decode(txt,data):
         i=0
         while i < len(txt):
-            # print(f"длина текста {len(txt)}")
-            # print(i)
             if txt[i]=='|':
-                # print(f"номер i = {i}")
                 string_move=txt[:i]
-                # print(f"Текст для разбора: {string_move}")
                 index = string_move.find("х", 0,len(string_move))
-                # print(f"x расположен на позиции: {index}")
                 count=int(string_move[:index])
-                # print(f"множитель равен: {count}")
                 data=data+(string_move[index+1:])*count
-                # print(count)
-                # print(data)
                 txt=txt[i+1:]
-                # print(f"длина остатка текста: {len(txt)}")
-                # print(f"Новый текст для разбора {txt}")
                 i=0
             else:
                 i=i+1
